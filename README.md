@@ -53,7 +53,7 @@ O **Seu Guia ENEM** é um chatbot especializado que utiliza **IA generativa** (G
 
 1. **Clone o repositório**  
    ```sh
-   git clone 
+   git clone https://github.com/GabrielzinM/Seu-Guia-ENEM---Chatbot-Inteligente.git
 2. **Instale as dependências**  
    ```sh
     pip install flask google-generativeai python-dotenv
