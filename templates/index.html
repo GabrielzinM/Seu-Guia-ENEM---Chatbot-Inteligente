@@ -1,0 +1,70 @@
+<!-- PÁGINA PRINCIPAL - Interface do Chat -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- Metadados básicos -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seu Guia ENEM</title>
+    
+    <!-- CSS local e Font Awesome -->
+    <link rel="stylesheet" href="/static/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Container principal (card central) -->
+    <div class="container">
+        <!-- Cabeçalho com título -->
+        <header>
+            <div class="header-content">
+                <!-- Ícone + Título -->
+                <i class="fas fa-graduation-cap logo-icon"></i>
+                <div>
+                    <h1>Seu Guia ENEM</h1>
+                    <p class="subtitle">Tire todas suas dúvidas sobre o Exame Nacional do Ensino Médio</p>
+                </div>
+            </div>
+            
+            <!-- Dica rápida -->
+            <div class="quick-tips">
+                <p><i class="fas fa-lightbulb"></i> <strong>Dica rápida:</strong> Pergunte sobre datas, matérias, redação ou programas como Sisu e Prouni</p>
+            </div>
+        </header>
+        
+        <!-- Área do chat -->
+        <div class="chat-container">
+            <!-- Histórico de mensagens -->
+            <div id="chat-log">
+                <!-- Mensagem inicial do bot -->
+                <div class="bot-message welcome-message">
+                    <i class="fas fa-robot bot-icon"></i>
+                    <div>
+                        <p>Olá! Sou seu assistente especializado no ENEM.</p>
+                        <p>Posso te ajudar com:</p>
+                        <ul>
+                            <li><i class="fas fa-calendar-alt"></i> Datas e prazos</li>
+                            <li><i class="fas fa-book"></i> Conteúdo das provas</li>
+                            <li><i class="fas fa-pen-fancy"></i> Dicas de redação</li>
+                            <li><i class="fas fa-university"></i> Programas de acesso ao ensino superior</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Input do usuário -->
+            <div class="input-area">
+                <input type="text" id="user-input" placeholder="Digite sua pergunta sobre o ENEM...">
+                <button id="send-button"><i class="fas fa-paper-plane"></i> Enviar</button>
+            </div>
+        </div>
+        
+        <!-- Rodapé -->
+        <footer>
+            <p><i class="fas fa-info-circle"></i> As informações são baseadas em fontes oficiais do MEC/Inep. Sempre consulte o site oficial para confirmação.</p>
+        </footer>
+    </div>
+    
+    <!-- JavaScript do chat -->
+    <script src="/static/js.js"></script>
+</body>
+</html>
