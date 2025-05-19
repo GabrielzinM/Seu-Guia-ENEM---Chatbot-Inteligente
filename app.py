@@ -139,4 +139,6 @@ if __name__ == '__main__':
     if not os.path.exists('templates/index.html'):
         print("AVISO: Verifique a pasta templates/")
 
-    app.run(debug=True, port=5500)  # Inicia servidor
+import os
+port = int(os.environ.get("PORT", 5000))  # Inicia servidor
+app.run(host="0.0.0.0", port=port)
